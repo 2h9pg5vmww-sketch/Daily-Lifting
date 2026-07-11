@@ -1,0 +1,281 @@
+:root {
+  color-scheme: dark;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #06131f;
+  color: #f4f7fb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #07111d, #11253b 55%, #0c1d2e);
+}
+
+.app-shell {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 24px;
+  display: grid;
+  gap: 22px;
+}
+
+.hero-card,
+.card,
+.detail-card {
+  background: rgba(6, 19, 31, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.32);
+}
+
+.hero-card {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+.hero-main h1 {
+  font-size: clamp(2rem, 3vw, 2.8rem);
+  margin-bottom: 10px;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.24em;
+  font-size: 0.78rem;
+  color: #53b8ff;
+}
+
+.hero-copy {
+  max-width: 780px;
+  color: #c6d6e7;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+.hero-side {
+  display: grid;
+  gap: 12px;
+}
+
+.week-badge,
+.metric-card,
+.week-summary-box {
+  background: rgba(83, 184, 255, 0.14);
+  border: 1px solid rgba(83, 184, 255, 0.2);
+  border-radius: 18px;
+  padding: 14px 16px;
+}
+
+.week-badge {
+  font-weight: 800;
+  font-size: 1.05rem;
+}
+
+.hero-metrics {
+  display: grid;
+  gap: 10px;
+}
+
+.metric-card span {
+  display: block;
+  font-size: 0.8rem;
+  color: #84b0cb;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  margin-bottom: 4px;
+}
+
+.metric-card strong {
+  font-size: 1rem;
+}
+
+.card-header p {
+  color: #94a9bc;
+  margin-bottom: 0;
+}
+
+.week-summary {
+  display: grid;
+  gap: 12px;
+}
+
+.week-summary-box {
+  display: grid;
+  gap: 4px;
+}
+
+.week-summary-box strong {
+  color: #ffffff;
+}
+
+.rotation-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 14px;
+}
+
+.day-card {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  padding: 16px;
+  background: #0d1f2f;
+  display: grid;
+  gap: 7px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.day-card.today {
+  border-color: #53b8ff;
+  box-shadow: inset 0 0 0 1px rgba(83, 184, 255, 0.3);
+}
+
+.day-card .day {
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+.day-card .workout {
+  color: #53b8ff;
+  font-weight: 700;
+}
+
+.day-card .meta {
+  color: #9db6c8;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.link-btn,
+.back-link {
+  display: inline-block;
+  margin-top: 6px;
+  text-decoration: none;
+  background: linear-gradient(135deg, #4db8ff, #2371ff);
+  color: white;
+  padding: 10px 12px;
+  border-radius: 10px;
+  font-weight: 700;
+  width: fit-content;
+}
+
+.today-workout {
+  display: grid;
+  gap: 14px;
+}
+
+.workout-detail {
+  background: #0d1f2f;
+  border-radius: 18px;
+  padding: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.featured-lift {
+  padding: 12px 14px;
+  border-radius: 14px;
+  background: rgba(83, 184, 255, 0.14);
+  color: #d5efff;
+  margin-bottom: 12px;
+}
+
+.exercise-list {
+  padding-left: 18px;
+  color: #d4e2f0;
+  display: grid;
+  gap: 10px;
+}
+
+.exercise-item {
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.04);
+  line-height: 1.6;
+  display: grid;
+  gap: 6px;
+}
+
+.exercise-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.exercise-name-link {
+  color: #dff5ff;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.exercise-name-link:hover {
+  color: #7fd2ff;
+}
+
+.exercise-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.exercise-action {
+  border: 0;
+  border-radius: 999px;
+  padding: 6px 10px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.video-link {
+  background: rgba(83, 184, 255, 0.16);
+  color: #dff5ff;
+}
+
+.swap-button {
+  background: rgba(255, 255, 255, 0.08);
+  color: #f4f7fb;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.exercise-meta {
+  color: #9db6c8;
+}
+
+.detail-grid {
+  display: grid;
+  gap: 12px;
+}
+
+.detail-note {
+  color: #9db6c8;
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .hero-card {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .app-shell {
+    padding: 12px;
+  }
+
+  .hero-card,
+  .card,
+  .detail-card {
+    padding: 16px;
+  }
+}

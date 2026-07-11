@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daily Lifting</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="hero-card">
+        <div class="hero-main">
+          <p class="eyebrow">Auto-rotating hypertrophy engine</p>
+          <h1>Daily Lifting</h1>
+          <p class="hero-copy">
+            A structured training system built around muscle growth, shoulder durability, and explosive baseball performance.
+          </p>
+        </div>
+        <div class="hero-side">
+          <div id="week-badge" class="week-badge"></div>
+          <div class="hero-metrics">
+            <div class="metric-card">
+              <span>Current day</span>
+              <strong id="current-day-name"></strong>
+            </div>
+            <div class="metric-card">
+              <span>Next change</span>
+              <strong id="next-change-name"></strong>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="card">
+        <div class="card-header">
+          <h2>Weekly rotation</h2>
+          <p>A rotating weekly schedule that keeps the plan fresh while staying structured.</p>
+        </div>
+        <div id="week-summary" class="week-summary"></div>
+      </section>
+
+      <section class="card">
+        <div class="card-header">
+          <h2>Day-by-day plan</h2>
+          <p>Choose any day to view the full session, video guidance, and lift-swap options.</p>
+        </div>
+        <div id="rotation-grid" class="rotation-grid"></div>
+      </section>
+
+      <section class="card">
+        <div class="card-header">
+          <h2>Today’s session</h2>
+          <p>The plan updates automatically to the correct day and week.</p>
+        </div>
+        <div id="today-workout" class="today-workout"></div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
